@@ -41,24 +41,23 @@ border: 2px solid black;
 <div class="container-fluid">
 <div class="row">
 
-<header class="col-12 order-4">
+<header class="col-12">
 <img style="float:left" src="http://mtdata.ru/u32/photo2828/20823431365-0/asis.jpeg" height="80" alt="Логотип" />
  <h2><div class="text-center p-4">Название сайта</div></h2>
 </header>
 </div>
-
-<div class="col-12 mx-auto text-center mt-4 mb-4 order-4">
-<nav>
-<div class="pt-4 pb-4">
-<a href="#g" class="m-3 text-white"> Гиперссылки</a>
-<a href="#f" class="m-3 text-white"> Форма</a>
-<a href="#t" class="m-3 text-white"> Таблица</a>
-<a href="#p" class="m-3 text-white"> Подвал</a>
-</div></nav>
+<nav class="pt-4 pb-4 mt-4 mb-4">
+<div class="d-sm-flex flex-sm-column text-sm-center d-md-flex flex-md-row justify-content-md-around">
+<a href="#g" class="m-2 text-white"> Гиперссылки</a>
+<a href="#f" class="m-2 text-white"> Форма</a>
+<a href="#t" class="m-2 text-white"> Таблица</a>
+<a href="#p" class="m-2 text-white"> Подвал</a>
 </div>
-<div class="col-md-12 text-wrap order-1">
-<div class="col-lg-6 mx-auto text-wrap pl-5">
+</nav>
 
+
+<div class="col-sm-12 text-wrap ">
+<div class="col-md-6 mx-auto text-wrap pl-5">
 <ol id="g">
 <div class="p-4 mt-4 mb-4 text-white">
 <li><a class="text-white" href="http://example.com/">гиперссылку на главную страницу сайта example.com</a></li>
@@ -88,9 +87,9 @@ border: 2px solid black;
 </div>
 </div>
 
-
-<div class="col-md-12 text-center order-3">
-<div class="col-lg-4 mx-auto text-center">
+<div class="d-sm-flex flex-sm-column col-sm-12 order-sm-2 mx-sm-auto text-sm-center ">
+<div class="d-md-flex flex-md-column col-md-4 order-md-1 mx-md-auto text-md-center">
+<div class="">
 <div id="f" class="mt-4 mb-4 p-4">
  <h4>Форма</h4>
  <form action="/"
@@ -144,13 +143,12 @@ border: 2px solid black;
         С контрактом ознакомлен(а) </label><br />
       <input type="submit" value="Отправить" />
     </form>
-	</div>
-	</div>
+</div></div>
 </div>
 <div class="mt-4 mb-4">
-<div class="col-4 mx-auto text-center"><caption><h4>Покупки</h4></caption></div>
-<table id="t" class="col-md-12 order-2 text-center col-lg-4 mx-auto text-center">
-  
+<div class="col-sm-12 order-sm-1 mx-sm-auto text-sm-center col-md-4 order-md-2 mx-md-auto text-md-center">
+<caption><h4>Покупки</h4></caption>
+  <table id="t" class="mx-sm-auto text-sm-center  mx-md-auto text-md-center">
   <tr class="s1">
     <th>№</th>
     <th>Товар</th>
@@ -180,10 +178,11 @@ border: 2px solid black;
     <td colspan="2">Итого</td>
 	<td>125,00</td>
   </tr>
-</table></div>
+</table>
+</div></div>
+</div>
 
-
-<div class="col-12 mt-4 order-4">
+<div class="col-12 mt-4">
 <footer id="p">27/2 Федорова Нелли</footer>
 </div>
 </body>
